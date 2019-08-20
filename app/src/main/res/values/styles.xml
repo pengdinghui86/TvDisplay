@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor_unselected</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#353535</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="horizontal_gray_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#d9d9d9</item>
+    </style>
+
+    <!-- 默认提交按钮样式 -->
+    <style name="default_textview_btn">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">@dimen/we_title_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/selector_default_btn_bg</item>
+        <item name="android:textColor">@drawable/selector_default_btn_txt</item>
+    </style>
+
+    <!-- edittext的默认样式 -->
+    <style name="default_edit_style">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/edit_white_bg_normal</item>
+        <item name="android:textColor">@color/colorWeFontBlack</item>
+        <item name="android:textColorHint">#B4B4B4</item>
+        <item name="android:textSize">@dimen/we_normal_textsize</item>
+    </style>
+
+</resources>

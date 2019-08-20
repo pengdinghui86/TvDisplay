@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/main_ll_setting"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="29dp"
+                android:src="@drawable/logo_title"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="大屏导航"
+                android:textSize="@dimen/item_title_size"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <Spinner
+                android:id="@+id/main_spinner_time_space"
+                android:layout_width="81dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner_selector"
+                android:layout_toLeftOf="@+id/main_bt_start_display">
+                <!--android:popupBackground="#4B576D"-->
+            </Spinner>
+
+            <Button
+                android:id="@+id/main_bt_start_display"
+                android:layout_width="76dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="播放"
+                android:textSize="@dimen/item_title_size"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_selector"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/main_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numColumns="4"
+        android:layout_margin="50dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="16dp">
+
+    </GridView>
+
+</LinearLayout>

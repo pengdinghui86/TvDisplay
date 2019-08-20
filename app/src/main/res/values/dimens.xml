@@ -1,0 +1,60 @@
+<resources>
+
+    <!--左边距-->
+    <dimen name="we_margin_left">14dp</dimen>
+    <!--标题高度-->
+    <dimen name="we_title_height">47dp</dimen>
+    <!--标题字体-->
+    <dimen name="we_title_textsize">16dp</dimen>
+
+    <!--标题图标大小-->
+    <dimen name="we_title_icon_size">20dp</dimen>
+
+    <!--普通字体-->
+    <dimen name="we_normal_textsize">13dp</dimen>
+
+    <!--小字体-->
+    <dimen name="we_middle_textsize">12dp</dimen>
+
+    <!--小字体-->
+    <dimen name="we_small_textsize">11dp</dimen>
+
+    <!--主菜单-->
+    <dimen name="we_footer_height">54dp</dimen>
+
+    <!--主菜单子图标-->
+    <dimen name="we_footer_icon_height">20dp</dimen>
+
+    <!--列表图标大小-->
+    <dimen name="we_listview_icon_size">48dp</dimen>
+
+    <!--列表图标大小-->
+    <dimen name="we_listview_span_line">1dp</dimen>
+
+    <!--列表图标上、下空白-->
+    <dimen name="we_listview_item_top_margin">8dp</dimen>
+
+    <!--列表高度-->
+    <dimen name="we_listview_item_height">64dp</dimen>
+
+    <!--小列表图标大小-->
+    <dimen name="we_listview_icon_small_size">36dp</dimen>
+
+    <!--小列表图标上、下空白-->
+    <dimen name="we_listview_item_small_top_margin">8dp</dimen>
+
+    <!--小列表高度-->
+    <dimen name="we_listview_item_small_height">52dp</dimen>
+
+    <!--小列表更小图标大小  如checkbox-->
+    <dimen name="we_lsitview_item_small_mini_size">24dp</dimen>
+
+    <dimen name="ring_chart_center_text_size">26dp</dimen>
+    <dimen name="ring_chart_text1_size">13dp</dimen>
+    <dimen name="ring_chart_text2_size">18dp</dimen>
+    <dimen name="ring_chart_min_height">10dp</dimen>
+
+    <dimen name="title_size">20dp</dimen>
+    <dimen name="item_title_size">16dp</dimen>
+    <dimen name="item_normal_size">13dp</dimen>
+</resources>

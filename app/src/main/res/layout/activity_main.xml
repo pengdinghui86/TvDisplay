@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_ll_setting"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:paddingTop="14dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择时间间隔（秒）："
+                android:textSize="@dimen/item_title_size"/>
+
+            <Spinner
+                android:id="@+id/main_spinner_time_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/main_bt_start_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="播放"
+                android:textColor="@color/white"
+                style="@style/default_textview_btn"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/main_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/main_bt_last_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="上一页"
+            android:textColor="@color/white"
+            style="@style/default_textview_btn"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/main_bt_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="下一页"
+            android:textColor="@color/white"
+            style="@style/default_textview_btn"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

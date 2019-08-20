@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor_unselected">#999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray_aa">#aaaaaa</color>
+    <color name="blue_96">#0096ff</color>
+    <color name="blue_71">#0171c4</color>
+    <!--字体黑色-->
+    <color name="colorWeFontBlack">#000000</color>
+
+    <!--字体灰色-->
+    <color name="colorWeFontGray_9">#666666</color>
+
+    <!--字体灰色-->
+    <color name="colorWeFontGray_b">#bbbbbb</color>
+
+    <color name="region_selected">#2DA5F3</color>
+    <color name="edit_ip_text_color">#9A9A9A</color>
+</resources>

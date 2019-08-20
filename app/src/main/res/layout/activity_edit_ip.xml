@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/blue_71"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_actionbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/back"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_actionbar_editData2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/we_small_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_actionbar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:text="设置服务器地址"
+            android:textSize="@dimen/we_title_textsize" />
+
+        <TextView
+            android:id="@+id/tv_actionbar_editData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/we_normal_textsize"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_actionbar_refresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_actionbar_rightimag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:src="@drawable/settings_normal"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/edit_ip_rl_http"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/border_selector"
+            android:layout_marginRight="19dp"
+            android:layout_height="105dp">
+
+            <ImageView
+                android:id="@+id/edit_ip_iv_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/http"/>
+
+            <TextView
+                android:id="@+id/edit_ip_tv_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="http://"
+                android:layout_below="@+id/edit_ip_iv_http"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_ip_rl_https"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/border_selector"
+            android:layout_marginLeft="19dp"
+            android:layout_height="105dp">
+
+            <ImageView
+                android:id="@+id/edit_ip_iv_https"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/https"/>
+
+            <TextView
+                android:id="@+id/edit_ip_tv_https"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="https://"
+                android:layout_below="@+id/edit_ip_iv_https"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.esc.screendisplay.DeleteEditText
+        android:id="@+id/edit_ip"
+        style="@style/default_edit_style"
+        android:layout_height="59dp"
+        android:layout_margin="15dp"
+        android:inputType="textUri"
+        android:maxLength="50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lines="1"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyz-_:/."
+        />
+
+    <Button
+        android:id="@+id/sure_bt"
+        style="@style/default_textview_btn"
+        android:layout_marginTop="75dp"
+        android:text="确定"/>
+</LinearLayout>
